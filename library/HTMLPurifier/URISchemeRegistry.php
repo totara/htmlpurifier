@@ -44,6 +44,11 @@ class HTMLPurifier_URISchemeRegistry
             $config = HTMLPurifier_Config::createDefault();
         }
 
+        // Scheme cannot be null
+        if ($scheme === null) {
+            return;
+        }
+
         // important, otherwise attacker could include arbitrary file
         $allowed_schemes = $config->get('URI.AllowedSchemes');
         if (!$config->get('URI.OverrideAllowedSchemes') &&
