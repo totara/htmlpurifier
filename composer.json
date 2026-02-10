@@ -1,9 +1,8 @@
 {
-    "name": "ezyang/htmlpurifier",
-    "description": "Standards compliant HTML filter written in PHP",
+    "name": "totara/htmlpurifier",
+    "description": "Totara fork of HTMLPurifier",
     "type": "library",
     "keywords": ["html"],
-    "homepage": "http://htmlpurifier.org/",
     "license": "LGPL-2.1-or-later",
     "authors": [
         {
@@ -13,7 +12,7 @@
         }
     ],
     "require": {
-        "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
+        "php": "~8.4.0 || ~8.5.0"
     },
     "require-dev": {
         "cerdic/css-tidy": "^1.7 || ^2.0",
@@ -41,5 +40,8 @@
             "url": "https://github.com/ezyang/simpletest.git",
             "no-api": true
         }
-    ]
+    ],
+    "replace": {
+        "ezyang/htmlpurifier": "self.version"
+    }
 }

@@ -1,5 +1,7 @@
-HTML Purifier [![Build Status](https://github.com/ezyang/htmlpurifier/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/ezyang/htmlpurifier/actions/workflows/ci.yml)
+HTML Purifier
 =============
+
+Totara fork of HTML Purifier.
 
 HTML Purifier is an HTML filtering solution that uses a unique combination
 of robust whitelists and aggressive parsing to ensure that not only are
